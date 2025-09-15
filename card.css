@@ -1,0 +1,80 @@
+.con{
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 5px;
+    border-width: 4px;
+    padding: 2%;
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom:none;
+    background-color: whitesmoke;
+}
+
+.card{
+    display: flex;
+    gap: 35px;
+    padding-left: 50px;
+}
+#cons{
+    width: 15%;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 50px;
+    padding-bottom: 5%;
+}
+#con{
+    width: max-content;
+    display: flex;
+    border: none;
+    text-align: justify;
+    gap: 20px;
+}
+ .besides{
+    text-align: right;
+    padding-top: 25px;
+ }
+ .beside{
+     text-align: left;
+     padding-right: 65px;
+     padding-top: 10px;
+     padding-left: 20px;
+  }
+  .besides img{
+     padding-bottom: 10px;
+ }
+ .changes{
+    background-color: rgb(8, 8, 49);
+ }
+
+ @media (max-width:760px){
+    body{
+        background: white;
+        margin: 0;
+        padding:0;
+        overflow-x: hidden;
+        width: min-content;
+    }
+    .head{
+        padding-top: 5px;
+        width: 100%;
+        margin: 0;
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        padding-left: 50px;
+    }
+    #cons{
+        width: 200px;
+        text-align: center;
+    }
+    #mode{
+        margin-right: 60%;
+    }
+ }

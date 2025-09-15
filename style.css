@@ -1,0 +1,105 @@
+body{
+    background: white;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+.flex{
+    display:flex;
+}
+.change{
+    background-color: rgb(17, 17, 49);
+    color: white;
+}
+#mode{
+    margin-right: 80%;
+    color:grey;
+    font-size: smaller;
+    font-family: sans-serif;
+}
+hr{
+    width: 88%;
+    margin: 0;
+    padding: 0;
+}
+h4{
+    font-size: medium;
+    font-family:sans-serif;
+}
+.head{
+    padding-left: 50px;
+    padding-right: 0;
+    padding-top: 5px;
+    height: 35%;
+    margin: 0;
+}
+.down{
+    width: 100% ;
+}
+p{
+    color:grey;
+    font-size: smaller;
+    font-family: sans-serif;
+}
+
+.facebook{
+    border-top: blue;
+}
+.instagram{
+    border-top: pink;
+}
+.youtube{
+    border-top: red;
+}
+
+
+
+
+.toggle{
+    position: relative;
+    height: 12px;
+    width: 27px;
+    border: 2px solid grey;
+    border-radius: 50px;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    transition: 0.5s case;
+    margin-top: 10px;
+}
+.checkbox{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+.slider{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: whitesmoke;
+    border: 2px solid grey;
+    margin: 0;
+    box-shadow: 0px 0px 3px 1px whitesmoke;
+    transition: 0.5s ease;
+}
+.toggle:has(.checkbox:checked){
+    background: green;
+    border: 2px solid green;
+    height: 12px;
+    width: 27px;
+    padding: 2px;
+}
+.checkbox:checked + .slider{
+    transform: translateX(15px);
+    box-shadow: none;
+    background: black;
+    border: black;
+    height: 12px;
+    width: 12px;
+}
+
+
